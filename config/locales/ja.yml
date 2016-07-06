@@ -26,3 +26,15 @@ ja:
       message:
         name: "名前"
         body: "内容"
+  activerecord:
+    errors:
+      messages:
+        blank: "が入力されていません。"
+        too_long: "が長すぎます。"
+        too_short: "が短かすぎます。"
+    models:
+      message: "メッセージ"
+    attributes:
+      message:
+        body: "内容"
+        name: "名前"
