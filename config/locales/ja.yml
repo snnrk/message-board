@@ -21,11 +21,6 @@
 
 ja:
   hello: "Hello world"
-  helpers:
-    label:
-      message:
-        name: "名前"
-        body: "内容"
   activerecord:
     errors:
       messages:
@@ -38,3 +33,9 @@ ja:
       message:
         body: "内容"
         name: "名前"
+  helpers:
+    submit:
+      create: "登録する"
+  messages:
+    index:
+      title: メッセージ一覧
