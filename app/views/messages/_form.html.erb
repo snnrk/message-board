@@ -13,18 +13,18 @@
     <% end %>
     <div class="form-group">
         <%= f.label :name, class: "control-label col-xs-2" %>
-        <div class="col-xs-10">
-            <%= f.text_field :name, class: "form-control" %>
+        <div class="col-xs-8">
+            <%= f.text_field :name, class: "form-control", placeholder: true %>
         </div>
     </div>
     <div class="form-group">
         <%= f.label :body, class: "control-label col-xs-2" %>
-        <div class="col-xs-10">
-            <%= f.text_area :body, class: "form-control" %>
+        <div class="col-xs-8">
+            <%= f.text_area :body, class: "form-control", placeholder: true %>
         </div>
     </div>
     <div class="form-group">
-        <div class="col-xs-offset-2 col-xs-10">
+        <div class="col-xs-offset-2 col-xs-8">
             <%= f.submit class: "btn btn-sm btn-primary" %>
         </div>
     </div>

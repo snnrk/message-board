@@ -36,6 +36,7 @@ ja:
   helpers:
     submit:
       create: "登録する"
+      update: "更新する"
   messages:
     index:
       title: メッセージ一覧

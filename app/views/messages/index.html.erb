@@ -6,9 +6,14 @@
     <div class="panel-body">
         <% @messages.each do |message| %>
             <span class="label label-info"><%= message.name %></span>
+            <%= link_to edit_message_path(message) do %>
+                <span class="glyphicon glyphicon-pencil"></span>
+            <% end %>
+            <%= link_to message, method: :delete, data: { confirm: '削除してもよろしいですか？' } do %>
+                <span class="glyphicon glyphicon-remove"></span>
+            <% end %>
+            <br>
             <%= message.body %>
-            (<%= link_to "edit", edit_message_path(message) %>)
-            <%= link_to "destroy", message, method: :delete, data: { confirm: '削除してもよろしいですか？' } %>
             <br>
         <% end %>
     </div>
